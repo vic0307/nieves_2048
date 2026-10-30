@@ -1,20 +1,35 @@
-# Nieves 2048
+# Pruebas del Sistema - Punto de Venta Dolores
 
-Juego de fusión con sabores de nieve · Flutter · TDD.
+## Descripción
+Este repositorio contiene el código fuente y las evidencias de las pruebas realizadas para el sistema de punto de venta.
 
-```
-lib/
-  logica/         motor_2048, grid, direccion, estado_juego, motor_juego (Dart puro)
-  presentation/   juego_screen (fichas con degradados y animaciones)
-  main.dart
-test/             motor_2048_test, grid_test, motor_juego_test
-docs/             manual original
-```
+## Pruebas Realizadas
 
-## Uso
-```
-flutter create .
-flutter pub get
-flutter test
-flutter run
+### 1. Vista de Chocolate (Inventario / Selección)
+* **Descripción:** Verificación de la carga y selección de productos bajo la categoría de chocolate en el sistema.
+* **Resultado:** Exitoso.
+* **Evidencia:**  
+  ![Chocolate](capturas/chocolate.png)
+
+### 2. Vista de Fresa (Módulo de Transacción)
+* **Descripción:** Pruebas en el flujo de ventas seleccionando variantes de fresa y validando el puntaje o total acumulado.
+* **Resultado:** Exitoso.
+* **Evidencia:**  
+  ![Fresa](capturas/fresa.png)
+
+### 3. Vista de Naranja (Buscador y Catálogo)
+* **Descripción:** Validación de la funcionalidad de la interfaz y la actualización dinámica del catálogo de productos.
+* **Resultado:** Exitoso.
+* **Evidencia:**  
+  ![Naranja](capturas/naranja.png)
+
+### 4. Vista de Vainilla (Desglose de Monto)
+* **Descripción:** Verificación del cálculo de totales y registros almacenados correctamente en la base de datos local.
+* **Resultado:** Exitoso.
+* **Evidencia:**  
+  ![Vainilla](capturas/vainilla.png)
+
+## Tecnologías Utilizadas
+* **Framework:** Flutter (Dart)
+* **Base de datos:** SQLite (`sqflite`)
 ```
